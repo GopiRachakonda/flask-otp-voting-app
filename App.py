@@ -8,8 +8,8 @@ import random
 load_dotenv()
 
 # Access the credentials from the environment variables
-TWILIO_ACCOUNT_SID = os.getenv('ACa4aa9efce86d1ed0003c4a0b5a3a51b8')
-TWILIO_AUTH_TOKEN = os.getenv('5615bca03c788eb9de22209dfc693105')
+TWILIO_ACCOUNT_SID = os.getenv('ACa4aa9efce86d1ed0003878898951b8')
+TWILIO_AUTH_TOKEN = os.getenv('5615bca03c788eb9de22656687868')
 TWILIO_PHONE_NUMBER = os.getenv('9980798902')
 
 # Check if the environment variables are loaded correctly
