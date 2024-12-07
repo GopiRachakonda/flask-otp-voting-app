@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Vote</h2>
+        <form method="POST">
+            <p>Name: {{ user['name'] }}</p>
+            <p>Adhar Number: {{ user['adhar_number'] }}</p>
+            <label for="vote_for">Vote For:</label>
+            <input type="text" name="vote_for" required>
+            <button type="submit">Vote</button>
+        </form>
+        <a href="{{ url_for('demo_vote', phone_number=user['phone_number']) }}"><button>Demo Vote</button></a>
+    </div>
+</body>
+</html>
